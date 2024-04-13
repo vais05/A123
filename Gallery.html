@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content2="IE=edge">
+  <meta name="viewport" content2="width=device-width, initial-scale=1.0">
+  <title>Raja Education Academy</title>
+
+ 
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+ 
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  
+  <link rel="preload" as="image" href="./assets/images/hero-banner1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+
+</head>
+<style>
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9999; 
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: red; 
+}
+
+.all-events-text {
+      text-align: center;
+      margin-top: 50px; /* Adjust as needed */
+    }
+
+    .all-events-text h2 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #000000; /* Adjust color as needed */
+    }
+
+</style>
+
+<body id="top">
+
+ 
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">
+          <img src="C:\Users\vaish\Downloads\eduhome-master\assets\images\logo.png" alt="Logo" />
+        </a>
+      </h1>
+      
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Raju Education Academy</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-toggler>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#event" class="navbar-link" data-nav-toggler>Teacher</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  </section>
+
+
+  
+
+  <!-- Events Section -->
+  <section class="section event" id="event" aria-label="event">
+    <div class="container">
+      <div class="all-events-text">
+        <h2>Gallery</h2>
+      </div>
+      <ul class="grid-list">
+        <li>
+            <div class="image-container">
+              <figure class="card-banner1">
+                <img src="./assets/images/1.jpg" loading="lazy" alt="Innovation & Technological Entrepreneurship Team" class="img-cover">
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <figure class="card-banner1">
+                <img src="./assets/images/2.jpg" loading="lazy" alt="Virtual Spring Part-time Jobs Fair for Student" class="img-cover">
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <figure class="card-banner1">
+                <img src="./assets/images/3.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <figure class="card-banner1">
+                <img src="./assets/images/4.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <figure class="card-banner1">
+                <img src="./assets/images/5.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <figure class="card-banner1">
+                <img src="./assets/images/6.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+              </figure>
+            </div>
+          </li>
+          <li>
+              <div class="image-container">
+                <figure class="card-banner1">
+                  <img src="./assets/images/7.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <figure class="card-banner1">
+                  <img src="./assets/images/8.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <figure class="card-banner1">
+                  <img src="./assets/images/9.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <figure class="card-banner1">
+                  <img src="./assets/images/10.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <figure class="card-banner1">
+                  <img src="./assets/images/11.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <figure class="card-banner1">
+                  <img src="./assets/images/12.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+              </div>
+            </li> 
+            <li>
+                <div class="image-container">
+                  <figure class="card-banner1">
+                    <img src="./assets/images/13.jpg" loading="lazy" alt="Innovation & Technological Entrepreneurship Team" class="img-cover">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <figure class="card-banner1">
+                    <img src="./assets/images/14.jpg" loading="lazy" alt="Virtual Spring Part-time Jobs Fair for Student" class="img-cover">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <figure class="card-banner1">
+                    <img src="./assets/images/15.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <figure class="card-banner1">
+                    <img src="./assets/images/16.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <figure class="card-banner1">
+                    <img src="./assets/images/17.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <figure class="card-banner1">
+                    <img src="./assets/images/18.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                  <div class="image-container">
+                    <figure class="card-banner1">
+                      <img src="./assets/images/19.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-container">
+                    <figure class="card-banner1">
+                      <img src="./assets/images/20.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-container">
+                    <figure class="card-banner1">
+                      <img src="./assets/images/21.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-container">
+                    <figure class="card-banner1">
+                      <img src="./assets/images/22.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="image-container">
+                    <figure class="card-banner1">
+                      <img src="./assets/images/23.jpg" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  
+      </ul>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">REA</a>
+
+          <p class="section-text">
+            RAJA EDUCATIONAL ACADEMY</br>
+            REA</br>
+            ...the raising wise</br>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/people/RAJ-EDUCATIONAL-ACADEMY/100048616584578/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/rajushendre28/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Upcoming Events</span>
+            </a>
+          </li>
+
+        
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              # 40-27-12, First Floor,Beside Vijayawada Service Station Pinnamaneni Care Hospital Road, Gayathri Nagar,VIJAYAWADA.Krishna Dist.,A.P
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">9912450699</a>
+          </li>
+
+         
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:contact@REA.com" class="footer-link">rajaeduacademy@gmail.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2024 REA. All Rights Reserved <a href="#" class="copyright-link"></a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+<script>
+
+  const categoryCards = document.querySelectorAll('.category-card');
+
+  function showPopup(category) {
+    let content2 = '';
+    switch (category) {
+      case 'abacus':
+      content2 = '<h2>Abacus</h2><p>The Abacus is an ancient mathematical instrument used for calculation. The Abacus is one of the world’s first real calculating tools – and early forms of an Abacus are nearly 2500 years old. Abacus is a scientifically developed & proven program that improves the child’s life time skills; this program will be of 10 levels comprising Addition, Subtraction, Multiplication, Division, Decimals, LCM & GCD, Percentages, Square Roots, Cube Roots and –ve Numbers. Abacus can also be used for solving most of the scientific calculations.</p><p>Benefits of Abacus & Mental Arithmetic Program: Concentration, Memory Power, Observation, Judgment, Analyzing Skills, Self-Confidence, Imaginative & Creative Thinking, Logical & Reasoning Ability, Visualization & Perseverance.</p>';
+
+        break;
+      case 'vedic-math':
+     content2 = '<h2>Vedic Math</h2><p>The origin of Vedic Maths is from Atharva Veda of Vedas. (The four Vedas are namely Rig Veda, Yajur Veda, Sama Veda, and Atharva Veda.) Vedic Mathematics forms part of Jyotish Shastra, which is one of the six parts of Vedangas.</p><p>Vedic Mathematics is the name given to the ancient system of Indian Mathematics, which was rediscovered from the Vedas between 1911 and 1918 by Sri Bharati Krsna Tirthaji (1884-1960). According to his research, all of mathematics is based on sixteen Sutras, or word-formulae. For example, ‘Vertically and crosswise’ is one of these Sutras. These formulae describe the way the mind naturally works and are therefore a great help in directing the student to the appropriate method of solution.</p><p>The simplicity of Vedic Mathematics means that calculations can be carried out mentally (though the methods can also be written down). There are many advantages in using a flexible, mental system.</p><p>Vedic Maths program is aimed at developing the mental arithmetic ability of children. This program helps children lose the fear of mathematics and gain confidence in the subject. It helps the children in their academics and score better marks in all the subjects due to improved self-confidence.</p>';
+
+        break;
+      case 'handwriting':
+      content2 = '<h2>Handwriting</h2><p>This is some information about Handwriting.</p><p>Cursive writing is a style of handwriting in which letters are joined in a flowing manner. It is an attempt to write more quickly with style. Cursive handwriting acts as a connector between letters that form a word, aiding the child in seeing the letters as part of a whole word. Through cursive writing, a child can distinguish between each word more effectively. In cursive courses, all letters are beautifully defined and practiced to develop muscle memory. By the time a child holds a pencil, they can write smoothly and with much better fluency compared to print.</p><p>"An impressive handwriting reflects a strong personality."</p>';
+
+        break;
+      case 'ekids':
+     content2 = '<h2>E-Kids</h2><p>This is some information about E-Kids.</p><p>Introducing electronics to school children can be an exciting and educational experience. Electronics can help children understand fundamental principles of science, technology, engineering, and mathematics (STEM), foster creativity, and prepare them for future technological advancements. Some ideas and resources for introducing electronics to school children are:</p><ul><li><strong>Basic Electronics Concepts:</strong> Start with fundamental concepts like electricity, circuits, components (e.g., resistors, capacitors, LEDs), and safety precautions. Use simple analogies and hands-on experiments to explain these concepts.</li><li><strong>Hands-On Projects:</strong> Encourage children to build simple electronic circuits using breadboards or electronic kits designed for beginners. Projects could include creating a basic LED circuit, a simple buzzer circuit, or a light-sensitive circuit. Explain how to read circuit diagrams and schematics, gradually introducing more complex ones as children become comfortable.</li><li><strong>Arduino and Microcontrollers:</strong> Arduino is a popular platform for teaching electronics and programming. It provides an easy-to-use interface for creating interactive electronic projects. Start with basic Arduino projects like blinking LEDs or making simple robots. You can find many online tutorials and resources for beginners.</li></ul>';
+
+        break;
+      case 'memory-techniques':
+   content2 = '<h2>Memorization Techniques</h2><p>Memorization techniques are strategies that ease the retention of information process over time for the purpose of influencing future action. However, memorizing is not entirely an innate skill but rather an ongoing process one endures over time; it is possible for anyone to train and develop their memorizing abilities. For a concept to move from temporary working memory to long-term memory, there are a number of techniques that can be used. Firstly, understanding the material is essential to memorizing it. A second helpful technique is to connect the information you are trying to commit to memory to something that you already know and understand well. Material in isolation is more difficult to remember than material that is connected to other concepts.</p><p>Memorization techniques often involve repetition. These techniques involve visual aids like flashcards and diagrams to self-test material comprehension. Memorization takes time, and it is suggested to implement these techniques over several days and increase the time in between each study session to test progress and understanding.</p>';
+
+        break;
+      case 'rubic-cube':
+     content2 = '<h2>Rubik\'s Cube</h2><p>This is some information about Rubik\'s Cube.</p><p>The Rubik\'s Cube is a 3D mechanical puzzle consisting of a cube with six faces, each made up of nine smaller squares of the same color. The six faces are typically colored with six different colors: white, yellow, blue, green, red, and orange. The objective of the puzzle is to solve it by arranging the smaller squares so that each face of the cube is a single color again.</p>';
+
+        break;
+      default:
+        content2 = '<h2>Category Not Found</h2><p>Sorry, content for this category is not available.</p>';
+    }
+    document.getElementById('popupConten2t').innerHTML = content2;
+    document.getElementById('popupContainer').style.display = 'block';
+  }
+
+  categoryCards.forEach(card => {
+    card.addEventListener('click', function() {
+      const categoryId = this.getAttribute('id');
+      showPopup(categoryId);
+    });
+  });
+
+  window.addEventListener('click', function(event) {
+    const popup = document.getElementById('popupContainer');
+    if (event.target == popup) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
+  <script src="./assets/js/script.js" defer></script>
+
+ 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
